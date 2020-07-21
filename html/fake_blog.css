@@ -23,11 +23,10 @@ p, a {
 img {
     border: 3px solid gray; 
     margin: 1em auto; 
-    align-content: center;
 }
 
 table {
-    background-color: rgb(192, 138, 185);
-    color: yellow; 
-    border: 4px dotted green; 
+    background-color: red;
+    color: white; 
+    /* border: 1px black solid;  */
 }
