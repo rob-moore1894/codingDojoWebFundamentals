@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    background-color: rgb(213, 210, 174);
+    width: 90%;
+    margin: 0 auto; 
+    padding-top:2rem;
+}
+
+#header {
+    display: flex; 
+    justify-content: center;
+    align-items: baseline;
+}
+
+.head-icon {
+    height: 7rem;
+    width: 13rem;
+}
+
+#right-icon {
+    background-color: white;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0 1rem; 
+}
+
+#main {
+    display: flex; 
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.icon {
+    border: 1px solid black;
+    height: 15rem; 
+    width: 15rem; 
+    margin: .5em 0; 
+    padding: 1rem; 
+}
+
+.blue {
+    background-color: lightblue;
+}
+
+.red {
+    background-color: coral;
+}
