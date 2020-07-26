@@ -1,0 +1,29 @@
+Rob@DESKTOP-4JGQNC6 MINGW64 ~/Desktop
+$ mkdir test
+
+Rob@DESKTOP-4JGQNC6 MINGW64 ~/Desktop
+$ cd test
+
+Rob@DESKTOP-4JGQNC6 MINGW64 ~/Desktop/test
+$ touch index.html
+
+Rob@DESKTOP-4JGQNC6 MINGW64 ~/Desktop/test
+$ touch style.css
+
+Rob@DESKTOP-4JGQNC6 MINGW64 ~/Desktop/test
+$ touch commands.txt
+
+Rob@DESKTOP-4JGQNC6 MINGW64 ~/Desktop/test
+$ cp index.html index_2.html
+
+Rob@DESKTOP-4JGQNC6 MINGW64 ~/Desktop/test
+$ cd ..
+
+Rob@DESKTOP-4JGQNC6 MINGW64 ~/Desktop
+$ mkdir destination
+
+Rob@DESKTOP-4JGQNC6 MINGW64 ~/Desktop
+$ mv test/index_2.html ../destination
+
+Rob@DESKTOP-4JGQNC6 MINGW64 ~/Desktop/test
+$ rm style.css

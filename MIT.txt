@@ -1,0 +1,34 @@
+Welcome! If you are new to the game, here are some tips: 
+ 
+Look at your surroundings with the command "ls". 
+Move to a new location with the command "cd LOCATION" 
+You can backtrack with the command "cd ..". 
+Interact with things in the world with the command "less ITEM" 
+ 
+If you forget where you are, type "pwd" 
+ 
+Go ahead, explore. We hope you enjoy what you find. Do ls as your first command.
+ 
+>ls
+ Locations: 
+ 
+ Items: 
+TotallyRadSpellbook
+PaperbackRomance
+HistoryOfTerminus
+NostalgiaForHome
+InconspicuousLever
+>pwd
+You are in Library.
+>less PaperbackRomance
+You flip the paperback open to a random page. "Oh, Horatio!" Antonia exclaimed, her bosom heaving as 
+Horatio deftly ripped the bodice from her lithe frame. Horatio gave an animalistic growl and he 
+clasped her fingers in his strong hands and brought them to rest upon his swollen— You close the 
+book, disinterested, and place it back on the shelf. 
+>less HistoryOfTerminus
+It looks like an interesting book, but it's way too long and the print is too tiny. Here is an 
+excerpt: 
+ DarkWizard', '...old tales tell of a DarkWizard who will fragment the land...
+ ...only the world-maker can stop the DarkWizard's virus from...
+...that the power of "sudo" may be the DarkWizard's only weakness...
+ 
