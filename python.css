@@ -9,8 +9,6 @@
     background-color: rgb(39, 84, 117); 
 }
 
-
-
 #head {
     display: flex;
     align-items: center;
@@ -22,7 +20,7 @@
     height: 5em;
 }
 
-p {
+#main-description p, #main-signature {
     color: white; 
 }
 
@@ -30,7 +28,7 @@ span {
     color: black; 
 }
 
-a {
+#search a {
     color: rgb(148, 140, 100);
 }
 
@@ -58,9 +56,9 @@ input::placeholder {
     width: 100%; 
     background-color:rgb(111, 154, 190) ; 
     color: white; 
-    padding: 1em; 
+    padding: 1rem;
+    margin: 1rem 0; 
     border-radius: 5px; 
-    margin: 1em;
 }
 #navbar ul{
     display: flex;
@@ -70,13 +68,89 @@ input::placeholder {
 
 #navbar ul li {
     list-style-type: none;
-    display: inline-block
 }
 
 #main {
+    width: 100%;
+    margin: 0 auto; 
     display: flex; 
+    align-items: center;
+    padding-bottom: 1rem; 
 }
 
-#side-nav-list li::before{
-    color: gold; 
+#sidenav {
+    width: 45%; 
+}
+
+#side-nav-list li{
+    list-style-type: none; 
+    text-align: center;
+}
+
+#side-nav-list li a {
+    color: white;
+    line-height: 175%;
+}
+
+#main-section {
+    width: 65%; 
+}
+
+#main-description p, #main-quote p {
+    text-align: center;
+}
+
+#main-quote p {
+    line-height: 200%;
+}
+
+#main-quote span {
+    color: rgb(148, 140, 100);
+    font-style: italic;
+}
+
+#info-container {
+    display: flex; 
+    background-color: white; 
+    justify-content: center;
+    align-items: top;
+}
+
+.info-box {
+    width: 40%; 
+    text-align: center;
+    margin: 1.5rem; 
+    border-top: 6px solid rgb(111, 154, 190); 
+}
+
+.info-box a {
+    color: rgb(111, 154, 190);
+}
+
+#footer {
+    background-color: rgb(39, 84, 117);
+}
+
+#footer ul {
+    display: flex; 
+    justify-content: space-evenly;
+    padding-top: 2rem;
+}
+
+#footer ul li {
+    list-style-type: none;
+     
+}
+
+#footer ul li a {
+    text-decoration: none;
+    color: rgb(111, 154, 190);
+    font-size: 1rem; 
+}
+
+#footer p {
+    color: rgb(111, 154, 190); 
+    font-size: .5rem; 
+    text-align: center;
+    padding-top: .5rem; 
 }
