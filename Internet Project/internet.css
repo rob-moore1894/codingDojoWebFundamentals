@@ -39,8 +39,7 @@ nav {
 
 #side-bar {
     width: 33%;
-    padding: 1rem 0; 
-    border-bottom: 2px solid black; 
+    padding: 2rem; 
 }
 
 button {
@@ -67,12 +66,50 @@ button {
     color: rgb(76, 129, 170); 
 }
 
-#ad-bar {
+#ad {
     background-image: url(images/ad_background.png);
+    color: white; 
+    text-align: center;
+    padding: 2rem; 
+}
+
+#ad img{
+    height: 6rem;
+    width: 4rem;
+}
+
+#ad p {
+    font-size: 1rem;
+}
+
+#learnmore {
+    background-color: lightblue; 
 }
 
 #maincontent-header {
-    display: flex; 
-    justify-content: space-between; 
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid gray;
+}
+
+#maincontent-logo img {
+    height: 2rem;
+    width: 2rem;
+}
+
+#maincontent-contact {
+    display: flex; 
+    align-items: center;
+}
+
+#maincontent-contact img {
+    height: 2rem;
+    width: 2rem;
+    margin: 1rem;
+}
+
+#article-footer {
+    display: flex;
+    border: 4px solid blue; 
 }
