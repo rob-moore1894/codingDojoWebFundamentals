@@ -1,3 +1,5 @@
+"use strict"; 
+
 function divider(){
     console.log("---------------------------------------------------------------------")
 }
@@ -81,7 +83,7 @@ divider();
 
 // Evens and Odds - Create a function that accepts an array.  Every time that array has three odd values in a row, print "That's odd!".  Every time the array has three evens in a row, print "Even more so!".
 function evensAndOdds(arr){
-    for (i = 0; i < arr.length; i++){
+    for (var i = 0; i < arr.length; i++){
         if (i > 1){
             if (arr[i] % 2 != 0){
                 if (arr[i - 1] % 2 != 0){
@@ -145,8 +147,23 @@ divider();
 
 
 // Reverse Array - Given an array, write a function that reverses its values, in-place.  Example: reverse([3,1,6,4,2]) returns the same array, but now contains values reversed like so... [2,4,6,1,3].  Do this without creating an empty temporary array.  (Hint: you'll need to swap values).
+function reverseArray(arr){
+    var newArr = [];
+    for (var i = arr.length - 1; i >= 0; i--){
+        newArr.push(arr[i]);
+    }
+    console.log(newArr);
+}
 
+function reverseArray2(arr){
+    console.log(arr.reverse());
+}
 
+console.log("reverseArray()");
+reverseArray([3,1,6,4,2]);
+console.log("reverseArray2()");
+reverseArray2([3,1,6,4,2]);
+divider(); 
 
 // Outlook: Negative - Given an array, create and return a new one containing all the values of the original array, but make them all negative (not simply multiplied by -1). Given [1,-3,5], return [-1,-3,-5].
 function outlookNegative(arr){
@@ -181,7 +198,17 @@ alwaysHungry(["food", "food", 3, "food"]);
 divider();
 
 // Swap Toward the Center - Given an array, swap the first and last values, third and third-to-last values, etc.  Example: swapTowardCenter([true,42,"Ada",2,"pizza"]) turns the array into ["pizza", 42, "Ada", 2, true].  swapTowardCenter([1,2,3,4,5,6]) turns the array into [6,2,4,3,5,1].  No need to return the array this time.
-
+function swapTowardCenter(arr){
+    for (var i = 0; i <= (arr.length / 2); i++){
+        var temp = arr[i];
+        arr[i] = arr[arr.length - 1 - i];
+        arr[arr.length - 1 - i] = temp; 
+    }
+    console.log(arr);
+}
+console.log("swapTowardCenter()");
+swapTowardCenter([true,42,"Ada",2,"pizza"]);
+divider();
 
 
 // Scale the Array - Given an array arr and a number num, multiply all values in the array arr by the number num, and return the changed array arr.  For example, scaleArray([1,2,3], 3) should return [3,6,9].
