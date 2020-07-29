@@ -173,6 +173,17 @@ console.log("swap() = ");
 swap([1,5,10,-2]);
 divider();
 
+function swapValue(arr) {
+	var temp = arr[arr.length - 1];
+	arr[arr.length - 1] = arr[0];
+	arr[0] = temp;
+	console.log(arr);
+}
+console.log("swapValue() = ");
+swapValue([1, 2, 3, 4, 5]);
+divider();
+
+
 // Number to String - Write a function that takes an array of numbers and replaces any negative values within the array with the string 'Dojo'. For example if array = [-1,-3,2], your function will return ['Dojo','Dojo',2].
 function numToString(arr){
     for (var i = 0; i < arr.length; i++){
