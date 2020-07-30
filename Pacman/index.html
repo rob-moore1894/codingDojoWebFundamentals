@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacman</title>
+    <style type="text/css">
+        body{
+            background-color: black;
+        }
+        
+        div.row div {
+            width: 20px;
+            height: 20px;
+            border: 1px solid black;
+            display: inline-block;
+        }
+
+        div.brick{
+            background-color: blue;
+        }
+
+        div.coin {
+            background: url("img/coin.gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        div.pacman{
+            background: url("img/pacman.gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+    </div>
+    <div class="row">
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="brick"></div>
+    </div>
+    <div class="row">
+        <div class="brick"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="brick"></div>
+        <div class="pacman"></div>
+        <div class="empty"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="brick"></div>
+    </div>
+    <div class="row">
+        <div class="brick"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="brick"></div>
+    </div>
+    <div class="row">
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+    </div>
+
+    <div id="world"></div>
+
+<script>
+    // list of features //
+    //JS Display world of bricks/coins/etc
+    var world = [
+        [2,2,2,2,2,2,2,2,2,2,2],
+        [2,1,1,1,1,1,1,1,1,1,2],
+        [2,1,1,1,1,1,1,1,1,1,2],
+        [2,1,1,1,1,1,1,1,1,1,2],
+        [2,2,2,2,2,2,2,2,2,2,2]
+    ];
+
+    function displayWorld(){
+        var output = '';
+
+        for (var i = 0; i < world.length; i++){
+            output += "<div class = 'row'>"
+            for (var j = 0; j < world[i].length; j++){
+                if(world[i][j] == 2){
+                    output += "<div class='brick'></div>";
+                } else if(world[i][j] == 1){
+                    output += "<div class='coin'></div>";
+                } else if(world[i][j] == 0){
+                    output += "<div class='empty'></div>"
+                }
+            }
+            output += "</div>"
+        }
+        console.log(output);
+        document.getElementById('world').innerHTML = output; 
+    }
+
+    displayWorld();
+
+
+    //Move character up and down 
+</script>
+
+
+</body>
+</html>
